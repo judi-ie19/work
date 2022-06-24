@@ -21,12 +21,13 @@ def name(x):
     start+=1
     end-=1
     str=""
-    str.join(z)
-    if (str==z):
+    w=(str.join(z))
+    if(w==x):
         print("its a palindrome")
     else:
         print("its not a palindrome")
-name("mum")
+name=("malayami mum")
+
 
     
 
