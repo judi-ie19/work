@@ -1,7 +1,7 @@
 from pkg_resources import ensure_directory
 
 
-a="I am Akirachix"
+a="I am a student at Akirachix persuing software development "
 b=a.split()
 start=0
 end=len(b)-1
@@ -13,20 +13,18 @@ while start<end:
 print(str.join(b))
 
 def name(x):
-    z=x.split()
     start=0
-    end=len(z)-1
+    end=len(x)-1
     while start<end:
-       z[start],z[end]=z[end],z[start]
-    start+=1
-    end-=1
-    str=""
-    w=(str.join(z))
-    if(w==x):
-        print("its a palindrome")
-    else:
-        print("its not a palindrome")
-name=("malayami mum")
+        if x[start]!=x[end]:
+            print("its not a palindrome")
+            break
+        else:
+            start+=1
+            end-=1
+            print("its a palindrome")    
+name("civic")   
+ 
 
 
     
